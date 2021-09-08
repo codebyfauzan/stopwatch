@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+button i {
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.stopwatch-app {
+    background-color: #FBFEF9;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 80px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.current-time {
+    text-align: center;
+}
+
+.timer {
+    text-align: center;
+    margin: 15px auto;
+    color: #1C1D21;
+}
+
+.buttons {
+    margin: 0 auto 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button i {
+    margin-right: 5px;
+}
+
+button.primary {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+button.primary:hover,
+button.primary:focus {
+    background-color: #F082AC;
+}
+
+button.secondary {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border-style: none;
+    color: #EA4C89;
+    cursor: pointer;
+}
+
+.participant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.participant-icon {
+    flex: 1;
+}
+
+.participant-icon i {
+    font-size: 24px;
+    color: #7F7C82;
+}
+
+.participant .participant-name {
+    flex: 2;
+    text-align: left;
+}
+
+.participant-time {
+    flex: 2;
+}
+
+.done {
+    color: #EA4C89;
+    font-weight: 600;
+}
+
+.blink {
+    animation: blink 1s ease infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.participant button {
+    flex: .5;
+    padding: 10px 5px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
