@@ -6,7 +6,8 @@
 
 body,
 button {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', monospace;
+    color: #1c1d21;
 }
 
 button i {
@@ -15,7 +16,6 @@ button i {
 }
 
 .stopwatch-app {
-    background-color: #FBFEF9;
     max-width: 500px;
     margin: 0 auto;
     padding: 20px 0;
@@ -33,12 +33,19 @@ button i {
 
 .current-time {
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
 }
 
 .timer {
     text-align: center;
     margin: 15px auto;
     color: #1C1D21;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.timer h1 {
+    font-weight: 500;
 }
 
 .buttons {
@@ -58,32 +65,38 @@ button i {
     align-items: center;
 }
 
-.buttons button i {
+.buttons .primary {
     margin-right: 5px;
 }
 
 button.primary {
     background-color: #EA4C89;
     border-radius: 8px;
-    border-style: none;
+    border: 1px solid #EA4C89;
     color: #FFFFFF;
-    margin-right: 5px;
 }
 
 button.primary:hover,
 button.primary:focus {
     background-color: #F082AC;
+    border: 1px solid #F082AC;
 }
 
 button.secondary {
     background-color: #FFFFFF;
     border-radius: 8px;
-    border-style: none;
     color: #EA4C89;
     cursor: pointer;
+    border: 1px solid #EA4C89;
 }
 
-.participant {
+button.secondary:hover {
+    background-color: #EA4C89;
+    color: #FFFFFF;
+}
+
+.participant,
+.identity {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,4 +147,11 @@ button.secondary {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.identity {
+    flex-direction: column;
+    padding: 20px;
+    background-color: #EA4C89;
+    color: white;
 }
