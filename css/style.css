@@ -91,8 +91,7 @@ button.secondary {
 }
 
 button.secondary:hover {
-    background-color: #EA4C89;
-    color: #FFFFFF;
+    background-color: #eeeeee;
 }
 
 .participant,
