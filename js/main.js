@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // When doneButton get clicked
         element.addEventListener('click', function() {
             // Do nothing when timer doesn't start and pTime is done
-            if(second == 0 || participantsTime[index].classList.contains('done')) {
+            if(elapsedTime == 0 || participantsTime[index].classList.contains('done')) {
                 return;
             }
             // Adding effects to pTime when it's done
